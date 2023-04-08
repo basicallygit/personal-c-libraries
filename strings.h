@@ -2,6 +2,6 @@
 #define STRINGS_H
 
 char* strrev(const char* input);
-char* strtrunc(const char* input, int len);
+char* strtrunc(const char* input, int position);
 
 #endif
