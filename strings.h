@@ -1,7 +1,7 @@
 #ifndef STRINGS_H
 #define STRINGS_H
 
-char* strrev(const char* input);
-char* strtrunc(const char* input, int position);
+char* strrev(char* input);
+char* strtrunc(char* input, int position);
 
 #endif
