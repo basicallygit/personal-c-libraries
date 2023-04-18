@@ -17,7 +17,7 @@ int main() {
 }
 
 void assert_reversed() {
-    const char* my_string = "Hello!";
+    char* my_string = "Hello!";
     char* reversed = strrev(my_string);
     
     if (strcmp(reversed, "!olleH") == 0) {
@@ -32,7 +32,7 @@ void assert_reversed() {
 }
 
 void assert_truncated() {
-    const char* my_string = "Hello!";
+    char* my_string = "Hello!";
     char* truncated = strtrunc(my_string, 3);
     
     if (strcmp(truncated, "Hel") == 0) {
