@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 char* strrev(char* input) {
     int len = strlen(input);
