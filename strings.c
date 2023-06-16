@@ -1,3 +1,9 @@
+/*
+ * various functions for handling
+ * strings in different ways
+ *
+ */
+
 #include <stdlib.h>
 #include <string.h>
 
@@ -6,7 +12,7 @@ char* strrev(char* input) {
     char* reversed = malloc(sizeof(char) * (len + 1));
     
     if (reversed == NULL)
-        abort();
+        return NULL;
 
     for (int i = 0; i < len; i++)
         reversed[(len - 1) - i] = input[i];
@@ -24,7 +30,7 @@ char* strtrunc(char* input, int position) {
     char* truncated = malloc(sizeof(char) * position + 1);
 
     if (truncated == NULL)
-        abort();
+        return NULL;
 
     for (int i = 0; i < position; i++)
         truncated[i] = input[i];

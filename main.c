@@ -13,6 +13,14 @@ int main() {
     assert_reversed();
     assert_truncated();
     assert_eprintf();
+    char* my_string = readline("Input something: ");
+    
+    if (my_string == NULL) {
+        puts("uh oh! readline() failed.");
+        return 1;
+    }
+
+    printf("You input: %s!\n", my_string);
     return 0;
 }
 
