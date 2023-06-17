@@ -1,5 +1,6 @@
 #include "strings.h"
 #include "io.h"
+#include "typedefs.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -13,6 +14,7 @@ int main() {
     assert_reversed();
     assert_truncated();
     assert_eprintf();
+
     char* my_string = readline("Input something: ");
     
     if (my_string == NULL) {

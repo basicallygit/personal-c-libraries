@@ -1,6 +1,6 @@
 CC = gcc
 
-CFLAGS = -Wall -Werror
+CFLAGS = -Wall -Wpedantic
 
 SRC = main.c strings.c io.c
 OBJ = $(SRC:.c=.o)
