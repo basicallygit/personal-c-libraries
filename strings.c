@@ -8,6 +8,9 @@
 #include <string.h>
 
 char* strrev(char* input) {
+    if (input == NULL)
+        return NULL;
+
     int len = strlen(input);
     char* reversed = malloc(sizeof(char) * (len + 1));
     
@@ -22,6 +25,10 @@ char* strrev(char* input) {
 }
 
 char* strtrunc(char* input, int position) {
+    if (input == NULL)
+        return NULL;
+
+
     int len = strlen(input);
     
     if (position >= len) //no need for allocating a new string
