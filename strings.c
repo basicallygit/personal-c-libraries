@@ -28,7 +28,6 @@ char* strtrunc(char* input, int position) {
     if (input == NULL)
         return NULL;
 
-
     int len = strlen(input);
     
     if (position >= len) //no need for allocating a new string
